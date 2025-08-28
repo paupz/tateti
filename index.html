@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ta-Te-Ti</title>
+  <link rel="stylesheet" href="nose.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Ta-Te-Ti</h1>
+    <p id="status" aria-live="polite">Tu turno (jugás con <strong>X</strong>)</p>
+
+    <div id="game-board" class="board" role="grid" aria-label="Tablero">
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+    </div>
+
+    <div class="actions">
+      <button id="restart-button">Reiniciar</button>
+      <label><input type="checkbox" id="starts-computer"> Que empiece la compu</label>
+      <label>
+        Dificultad:
+        <select id="difficulty">
+          <option value="easy">Fácil</option>
+          <option value="medium">Medio</option>
+          <option value="hard">Difícil</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="nose.js"></script>
+</body>
+</html>
+
